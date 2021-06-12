@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <ul>
+      <li v-for="memo in memos" :key="memo.id">
+        {{ memo.title }}： {{ memo.description }}
+      </li>
+    </ul>
   </div>
 </template>
 
